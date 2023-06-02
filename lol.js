@@ -3,14 +3,5 @@
 
 function test()
 {
-    if ((1+1) == "2")
-    {
-        console.log(true);
-        return true;
-    }
-    else
-    {
-        console.log(false);
-        return false;
-    }
+    console.log("hi!!");
 }
