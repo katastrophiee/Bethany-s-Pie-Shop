@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="site.css" type="text/css">
     <title>Home | Bethany's Pie Shop</title>
 </head>
-<body>
+<body id = "order-page">
     <header>
         <nav>
             <ul>
@@ -31,8 +31,10 @@
                 <p class="desc"></p>
             </div>
 
-            <form action="http://localhost:7071/api/post" method="POST">
-
+            <form action="https://localhost:7071/api/post" method="POST">  <!-- forward details to server -->
+                <input type="hidden" id="pie-order" name="pie-order">
+                <input type="hidden" id="user-location" name="user-location">
+                
                 <div class="input-group">
                     <div><label for="first-name">First Name</label></div>
                     <div><input type="text" name="first-name" id="first-name"/></div>
